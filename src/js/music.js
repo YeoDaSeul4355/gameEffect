@@ -261,7 +261,7 @@ function music() {
   for (let i = 0; i < allMusic.length; i++) {
     let li = `
         <li data-index="${i + 1}">
-            <img class="img" src="images/${allMusic[i].img}.png" alt="${
+            <img class="img" src="assets/images/${allMusic[i].img}.png" alt="${
       allMusic[i].name
     }">
             <span class="title">
