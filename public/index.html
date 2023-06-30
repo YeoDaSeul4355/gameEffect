@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Project</title>
+    <script type="module" crossorigin src="./assets/index-c24e249a.js"></script>
+    <link rel="stylesheet" href="./assets/index-a350392f.css">
+  </head>
+  <body>
+    <header id="header">
+      <h1>🎮JJUL GAME WORLD🎮</h1>
+      <div class="time">2023년 4월 24일 09시 30분 15초</div>
+    </header>
+
+    <main id="contents">
+      <div class="cursor">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAABJCAYAAACkYd+RAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADkSURBVHgB7dpbDoIwEEbhwbhMlsc+a3wxoW3Q2v5lBs555tKEz0mELmaWbN9iTntYoEIt9v3I0w/HuAgGqmKbTeu6P2DbauecEgxUXctsccKJhmGg6tpmiwtMNAwDVfcyW1xQaBgGqu5ttrjBQMMwUIXZwxt2GIaBKsw2LaDBMAxUYbanI8MwUBVqsU8TVzHY2uc3BQNVzQzyxzpz1MnNVuI/mLtGfFqa9pofBqpiz1lPnz/zYKAq/LaTXqOyuQsDVeHmrNsdcnkwUBVuzqobNndhoIrFqmKxqpizX/p72zYMVL0AAn87I8lZGqQAAAAASUVORK5CYII=" alt />
+      </div>
+      <div class="icon__box">
+        <div class="icon1">
+          <img src="./assets/game_ico01-98ffdfc8.ico" alt="뮤직" />
+          <span>MUSIC</span>
+        </div>
+        <div class="icon2">
+          <img src="./assets/game_ico02-c292531f.ico" alt="게임" />
+          <span>TETRIS</span>
+        </div>
+        <!-- <div class="icon3">
+                    <img src="images/game_ico03.ico" alt="기타" />
+                    <span>MUSIC</span>
+                </div>
+                <div class="icon4">
+                    <img src="images/game_ico04.ico" alt="코딩" />
+                    <span>MUSIC</span>
+                </div> -->
+      </div>
+
+      <!-- 뮤직 플레이어 -->
+      <div class="music__wrap">
+        <div class="music__inner">
+          <div class="music__header">
+            <span class="left"></span>
+            <h2>🎧JJUL'S PLAYLIST🎧</h2>
+            <span class="right">
+              <div class="music__close">
+                <img src="./assets/close-7ada9d31.svg" alt="" />
+              </div>
+            </span>
+          </div>
+          <div class="music__contents">
+            <div class="music__view">
+              <div class="image">
+                <img src="./assets/music__view01-7e9b886d.png" alt="1번째 음악" />
+              </div>
+            </div>
+            <div class="music__control">
+              <div class="title">
+                <h3>2 Baddies</h3>
+                <p>NCT 127</p>
+              </div>
+              <div class="progress">
+                <div class="bar">
+                  <audio id="main-audio" src="audio/music_audio01.mp3"></audio>
+                </div>
+                <div class="timer">
+                  <span class="current">0:00</span>
+                  <span class="duration">3:42</span>
+                </div>
+              </div>
+              <div class="control">
+                <span>
+                  <i class="repeat" id="control-repeat" title="전체 반복"></i>
+                  <!-- <i class="repeat-one" id="control-repeat" title="한곡 반복"></i>
+                                <i class="shuffle" id="control-repeat" title="랜덤 반복"></i> -->
+                </span>
+                <span>
+                  <i class="prev" id="control-prev" title="이전곡 재생"></i>
+                </span>
+                <span>
+                  <i class="play" id="control-play" title="재생"></i>
+                </span>
+                <span>
+                  <i class="next" id="control-next" title="다음곡 재생"></i>
+                </span>
+                <span>
+                  <i class="list" id="control-list" title="재생 목록"></i>
+                </span>
+                <!-- <span class="repeat-one">한곡 반복</span>
+                            <span class="shuffle">셔플</span>
+                            <span class="stop">정지</span> -->
+              </div>
+            </div>
+            <div class="music__list">
+              <h3>뮤직 리스트 <a href="#" class="close"></a></h3>
+              <ul>
+                <!-- <li>
+                                <img class="img" src="img/music__view01.png" alt="">
+                                <span class="title">
+                                    <strong>1. 2 Baddies</strong>
+                                    <em>NCT 127</em>
+                                </span>
+                                <span class="time">3:04</span>
+                            </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //뮤직 플레이어 -->
+
+      <!-- 테트리스 -->
+      <div class="tetris__wrap hide">
+        <div class="tetris__inner">
+          <div class="tetris__header">
+            <div class="tetris__close">
+              <img src="./assets/close-7ada9d31.svg" alt="" />
+            </div>
+            <h2 class="header__h2">🕹️TETRIS GAME🕹️</h2>
+          </div>
+          <div class="tetris__game__inner">
+            <div class="tetris__start">
+              <div class="desc">
+                <div class="tetris__desc__title">🎮테트리스 게임 설명🎮</div>
+                <div class="tetris__desc__desc">
+                  <em>⬅️</em> <em>➡️</em> <em>⬇️</em> : 블록이동<br /><br />
+                  <em>⬆️</em> : 블록 회전<br /><br />
+                  <em>SPACE</em> : 빠르게 내리기
+                </div>
+                <div class="start__btn">START</div>
+              </div>
+            </div>
+            <div class="tetris__play">
+              <div class="view">
+                <ul></ul>
+              </div>
+            </div>
+            <div class="tetris__score">
+              <div class="score__title">SCORE</div>
+              <div class="user__score">0</div>
+              <div class="speed__title">SPEED</div>
+              <div class="speed__score">1</div>
+            </div>
+            <div class="tetris__text">
+              <div class="tetris__rule">
+                <h3>규칙</h3>
+                <p>점수 5점마다 스피드 +1</p>
+              </div>
+            </div>
+            <div class="tetris__over">
+              <div class="over">GAME OVER</div>
+              <div class="t_score">Your score 0</div>
+              <div class="t_replay_btn">다시 도전</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //테트리스 -->
+    </main>
+
+    <footer id="footer">
+      <div class="info">
+        현재 윈도우를 사용하고 있으며, 화면 크기는 1920 X 760입니다.
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    
+  </body>
+</html>
